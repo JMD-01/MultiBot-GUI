@@ -1,0 +1,1957 @@
+* {box-sizing: border-box}
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  overflow-x: hidden;
+}
+/* Title bar*/
+.titlebar {
+  height: 50px;
+  width: 735px;
+  background-color: #15282F;
+  left: 85px;
+  top: 0px;
+  border: 1px solid #1A2E35;
+  position: absolute;
+  overflow: visible; 
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+}
+/* Close button*/
+.exit {
+  height: 50px;
+  width: 41px;
+  background-color: #15282F;
+  left: 859px;
+  top: 0px;
+  border: 1px solid #1A2E35;
+  position: absolute;
+  overflow: visible;
+  cursor: pointer;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+}
+.exit:hover {
+  background-color: #245b6e;
+  border: 1px solid #ffffff;
+}
+.minimize {
+  height: 50px;
+  width: 40px;
+  background-color: #15282F;
+  left: 819px;
+  top: 0px;
+  border: 1px solid #1A2E35;
+  position: absolute;
+  overflow: visible;
+  cursor: pointer;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+}
+.minimize:hover {
+  background-color: #245b6e;
+  border: 1px solid #ffffff;
+  
+}
+.exit-logo {
+  position: absolute;
+  overflow: visible;
+  height: 45px;
+  width: 45px;
+  top: 1px;
+  left: -2px;
+  cursor: pointer;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+
+.minimize-logo {
+  position: absolute;
+  overflow: visible;
+  height: 50px;
+  width: 50px;
+  top: -15px;
+  left: -5px;
+  cursor: pointer;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+.multibot-logo {
+  position: absolute;
+  overflow: visible;
+  height: 50px;
+  width: 45px;
+  top: -1px;
+  left: 5px;
+}
+.multibot-titlebar {
+  top: 8px;
+  left: 60px;
+  padding: 0px;
+  font-family: "Lucida Console";
+  font-size: 35px;
+  font-weight: 1000;
+  color: white;
+  position: absolute;
+  overflow: visible;
+  
+}
+/* General BAR TAB */
+.general-bar{
+  position: absolute;
+  overflow: visible;
+  height: 170px;
+  width: 815px;
+  top: 50px;
+  left: 85px;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+
+.general-bar-logo {
+  left: 0px;
+  top: 0px;
+  padding: 0px;
+  flex: 1;
+  position: absolute;
+  overflow: visible;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+
+.generalstartbutton {
+  top: 35px;
+  left: 670px;
+  height: 35px;
+  width: 100px;
+  position: absolute;
+  overflow: visible;
+  border: 3px solid #5E8998;
+  border-radius: 8px;
+  font-family: Lucida Console;
+  font-size: 19px;
+  font-weight: bold;
+  color: #5E8998;
+  padding-left: 18px;
+  padding-top: 5px;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+.generalstartbutton:hover {
+  top: 35px;
+  left: 670px;
+  height: 35px;
+  width: 100px;
+  position: absolute;
+  overflow: visible;
+  border: 3px solid white;
+  border-radius: 8px;
+  font-family: Lucida Console;
+  font-size: 19px;
+  padding-left: 18px;
+  padding-top: 5px;
+  font-weight: bold;
+  color: white;
+  background-color: #5E8998; 
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+.generalstopbutton {
+  top: 95px;
+  left: 670px;
+  height: 35px;
+  width: 100px;
+  position: absolute;
+  overflow: visible;
+  border: 3px solid #5E8998;
+  border-radius: 8px;
+  font-family: Lucida Console;
+  font-size: 19px;
+  font-weight: bold;
+  color: #5E8998;
+  padding-left: 25px;
+  padding-top: 5px;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+.generalstopbutton:hover {
+  top: 95px;
+  left: 670px;
+  height: 35px;
+  width: 100px;
+  position: absolute;
+  overflow: visible;
+  border: 3px solid white;
+  border-radius: 8px;
+  font-family: Lucida Console;
+  font-size: 19px;
+  font-weight: bold;
+  color: white;
+  background-color: #5E8998; 
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+.generalbotstatustext {
+  top: 30px;
+  left: 40px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 19px;
+  font-weight: bold;
+  color: white;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+.generaldiscordbotstatus {
+  top: 82px;
+  left: 40px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 19px;
+  font-weight: bold;
+  color: white;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+.generalserverip {
+  top: 132px;
+  left: 40px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 19px;
+  font-weight: bold;
+  color: white;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+.generalonline {
+  top: 82px;
+  left: 410px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 19px;
+  font-weight: bold;
+  color: white;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+/* SideBar TAB */
+.side-bar {
+  height: 700px;
+  width: 85px;
+  background-color: #09181C;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  overflow: visible;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+
+.homebutton {
+  position: absolute;
+  overflow: visible;
+  left: 0px;
+  top: 0px;
+  height: 50px;
+  width: 85px;
+  color: #304A54;
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  padding-left: 10px;
+  padding-top: 60px;
+}
+
+.settingsbutton {
+  position: absolute;
+  overflow: visible;
+  left: 0px;
+  top: 50px;
+  height: 85px;
+  width: 85px;
+  color: #304A54;
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  padding-left: 2px;
+  padding-top: 65px;
+}
+
+.discordbutton {
+  position: absolute;
+  overflow: visible;
+  left: 0px;
+  top: 135px;
+  height: 85px;
+  width: 85px;
+  color: #304A54;
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  padding-left: 4px;
+  padding-top: 65px;
+}
+
+.botsbutton {
+  position: absolute;
+  overflow: visible;
+  left: 0px;
+  top: 220px;
+  height: 85px;
+  width: 85px;
+  color: #304A54;
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  padding-left: 22px;
+  padding-top: 65px;
+}
+
+.homebuttonlogo {
+  position: absolute;
+  overflow: visible;
+  left: 8px;
+  top: 0px;
+  height: 55px;
+  width: 70px;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+
+.settingsbuttonlogo {
+  position: absolute;
+  overflow: visible;
+  left: 3px;
+  top: -4px;
+  height: 77px;
+  width: 77px;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+
+.discordbuttonlogo {
+  position: absolute;
+  overflow: visible;
+  left: 3px;
+  top: -4px;
+  height: 77px;
+  width: 77px;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+
+.botsbuttonlogo {
+  position: absolute;
+  overflow: visible;
+  left: 3px;
+  top: -4px;
+  height: 77px;
+  width: 77px;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+/* Home TAB */
+.hometab {
+  height: 480px;
+  width: 815px;
+  top: 220px;
+  left: 85px;
+  position: absolute;
+  overflow: visible;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+
+.homelabelbar{
+  background-color: #15282F;
+  position: absolute;
+  overflow: visible;
+  height: 40px;
+  width: 815px;
+  top: 0px;
+  left: 0px;
+  border: 1px solid #1A2E35;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+.homelabelicon {
+  top: -6px;
+  left: -1px;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  overflow: visible;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+.homelabeltext {
+  top: 8px;
+  left: 50px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+/* Settings TAB */
+.settingstab {
+  height: 480px;
+  width: 815px;
+  top: 220px;
+  left: 85px;
+  position: absolute;
+  overflow: visible;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+
+.settingslabelbar{
+  background-color: #15282F;
+  position: absolute;
+  overflow: visible;
+  height: 40px;
+  width: 815px;
+  top: 0px;
+  left: 0px;
+  border: 1px solid #1A2E35;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+.settingslabelicon {
+  top: -4px;
+  left: 1px;
+  height: 46px;
+  width: 46px;
+  position: absolute;
+  overflow: visible;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+.settingslabeltext {
+  top: 8px;
+  left: 50px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+
+/* Discord TAB */
+.discordtab {
+  height: 480px;
+  width: 815px;
+  top: 220px;
+  left: 85px;
+  position: absolute;
+  overflow: visible;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+
+.discordlabelbar{
+  background-color: #15282F;
+  position: absolute;
+  overflow: visible;
+  height: 40px;
+  width: 815px;
+  top: 0px;
+  left: 0px;
+  border: 1px solid #1A2E35;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+.discordlabelicon {
+  top: -6px;
+  left: -1px;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  overflow: visible;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+.discordlabeltext {
+  top: 8px;
+  left: 50px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+
+/* Bots TAB */
+.botstab {
+  height: 480px;
+  width: 815px;
+  top: 220px;
+  left: 85px;
+  position: absolute;
+  overflow: visible;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+
+.botslabelbar{
+  background-color: #15282F;
+  position: absolute;
+  overflow: visible;
+  height: 40px;
+  width: 815px;
+  top: 0px;
+  left: 0px;
+  border: 1px solid #1A2E35;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+.botslabelicon {
+  top: -4px;
+  left: 1px;
+  height: 46px;
+  width: 46px;
+  position: absolute;
+  overflow: visible;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+.botslabeltext {
+  top: 8px;
+  left: 50px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+/* Server Tab Layout(settings) */
+.settingsservertab{
+  background-color: #142428;
+  position: absolute;
+  overflow: visible;
+  height: 220px;
+  width: 407px;
+  top: 40px;
+  left: 0px;
+  border: 1px solid #1A2E35;
+}
+.settingsserverlabelbar {
+  background-color: #15282F;
+  position: absolute;
+  overflow: visible;
+  height: 30px;
+  width: 407px;
+  top: -2px;
+  left: -1px;
+  border: 1px solid #1A2E35;
+}
+.settingsserverlabeltext {
+  top: 5px;
+  left: 36px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+.settingsserverlabelicon {
+  top: 2px;
+  left: 7px;
+  position: absolute;
+  overflow: visible;
+}
+/* Server-tab-content */
+/* Server-ip */
+.settingsservertabIPtext {
+  top: 40px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 20px;
+  font-weight: 2px;
+  color: white;
+  white-space:pre;
+}
+.settingsservertabIPbox {
+  top: 35px;
+  left: 122px;
+  height: 28px;
+  width: 270px;
+  position: absolute;
+  overflow: visible;
+  border: 2px solid #142A30;
+  background-color: #1B3742;
+  font-family: Lucida Console;
+  font-size: 14px;
+  font-weight: 2px;
+  color: white;
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+/* Port */
+.settingsservertabPorttext {
+  top: 75px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 20px;
+  font-weight: 2px;
+  color: white;
+  white-space:pre;
+}
+.settingsservertabPortbox {
+  top: 70px;
+  left: 122px;
+  height: 28px;
+  width: 100px;
+  position: absolute;
+  overflow: visible;
+  border: 2px solid #142A30;
+  background-color: #1B3742;
+  font-family: Lucida Console;
+  font-size: 14px;
+  font-weight: 2px;
+  color: white;
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+.settingsservertabPortbox::-webkit-inner-spin-button, 
+.settingsservertabPortbox::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+/* version */
+.settingsservertabVersiontext {
+  top: 110px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 20px;
+  font-weight: 2px;
+  color: white;
+  white-space:pre;
+}
+.settingsservertabVersionbox {
+  top: 105px;
+  left: 122px;
+  height: 28px;
+  width: 100px;
+  position: absolute;
+  overflow: visible;
+  border: 2px solid #142A30;
+  background-color: #1B3742;
+  font-family: Lucida Console;
+  font-size: 14px;
+  font-weight: 2px;
+  color: white;
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+/* Version options */
+.option1 {
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+.option2 {
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+/* Bots Tab Layout(settings) */
+.settingsbotstab{
+  background-color: #142428;
+  position: absolute;
+  overflow: visible;
+  height: 220px;
+  width: 408px;
+  top: 40px;
+  left: 407px;
+  border: 1px solid #1A2E35;
+}
+.settingsbotslabelbar {
+  background-color: #15282F;
+  position: absolute;
+  overflow: visible;
+  height: 30px;
+  width: 408px;
+  top: -2px;
+  left: -1px;
+  border: 1px solid #1A2E35;
+}
+.settingsbotslabeltext {
+  top: 5px;
+  left: 36px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+.settingsbotslabelicon {
+  top: 2px;
+  left: 7px;
+  position: absolute;
+  overflow: visible;
+}
+/* Max bots */
+.settingsbotstabMaxBotsText {
+  top: 40px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 20px;
+  font-weight: 2px;
+  color: white;
+  white-space:pre;
+}
+.settingsbotstabMaxBotsBox {
+  top: 35px;
+  left: 170px;
+  height: 28px;
+  width: 50px;
+  position: absolute;
+  overflow: visible;
+  border: 2px solid #142A30;
+  background-color: #1B3742;
+  font-family: Lucida Console;
+  font-size: 14px;
+  font-weight: 2px;
+  color: white;
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+/* Join speed */
+.settingsbotstabJoinSpeedText {
+  top: 75px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 20px;
+  font-weight: 2px;
+  color: white;
+  white-space:pre;
+}
+.settingsbotstabJoinSpeedBox {
+  top: 70px;
+  left: 170px;
+  height: 28px;
+  width: 50px;
+  position: absolute;
+  overflow: visible;
+  border: 2px solid #142A30;
+  background-color: #1B3742;
+  font-family: Lucida Console;
+  font-size: 14px;
+  font-weight: 2px;
+  color: white;
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+/* Join command */
+.settingsbotstabJoinCommandText {
+  top: 110px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 20px;
+  font-weight: 2px;
+  color: white;
+  white-space:pre;
+}
+.settingsbotstabJoinCommandBox {
+  top: 105px;
+  left: 170px;
+  height: 28px;
+  width: 220px;
+  position: absolute;
+  overflow: visible;
+  border: 2px solid #142A30;
+  background-color: #1B3742;
+  font-family: Lucida Console;
+  font-size: 14px;
+  font-weight: 2px;
+  color: white;
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+/* Account Tab Layout(settings) */
+.settingsaccounttab{
+  background-color: #142428;
+  position: absolute;
+  overflow: visible;
+  height: 220px;
+  width: 407px;
+  top: 260px;
+  left: 0px;
+  border: 1px solid #1A2E35;
+}
+.settingsaccountlabelbar {
+  background-color: #15282F;
+  position: absolute;
+  overflow: visible;
+  height: 30px;
+  width: 407px;
+  top: -2px;
+  left: -1px;
+  border: 1px solid #1A2E35;
+}
+.settingsaccountlabeltext {
+  top: 5px;
+  left: 36px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+.settingsaccountlabelicon {
+  top: 2px;
+  left: 7px;
+  position: absolute;
+  overflow: visible;
+}
+/* File Path */
+.settingsaccounttabPathText {
+  top: 40px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 20px;
+  font-weight: 2px;
+  color: white;
+}
+/* File Path Box*/
+.settingsaccounttabPathBox {
+  top: 35px;
+  left: 65px;
+  height: 28px;
+  width: 280px;
+  position: absolute;
+  overflow: visible;
+  border: 2px solid #142A30;
+  background-color: #1B3742;
+  font-family: Lucida Console;
+  font-size: 14px;
+  font-weight: 2px;
+  color: white;
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+/* File Name */
+.settingsaccounttabFileText {
+  top: 75px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 20px;
+  font-weight: 2px;
+  color: white;
+}
+.settingsaccounttabFileName {
+  top: 78px;
+  left: 65px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 16px;
+  font-weight: 2px;
+  color: cyan;
+}
+/* Path Set Button */
+.settingsaccounttabPathButton {
+  top: 35px;
+  left: 350px;
+  height: 28px;
+  width: 50px;
+  position: absolute;
+  overflow: visible;
+  border: 2px solid #142A30;
+  background-color: #286178;
+  font-family: Lucida Console;
+  font-size: 14px;
+  font-weight: 2px;
+  color: white;
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+.settingsaccounttabPathButton:hover {
+  cursor: pointer;
+  background-color: #1092c5;
+}
+/* Check Button */
+.settingsaccounttabCheckButton {
+  top: 105px;
+  left: 65px;
+  height: 28px;
+  width: 70px;
+  position: absolute;
+  overflow: visible;
+  border: 2px solid #142A30;
+  background-color: #286178;
+  font-family: Lucida Console;
+  font-size: 14px;
+  font-weight: 2px;
+  color: white;
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+.settingsaccounttabCheckButton:hover {
+  cursor: pointer;
+  background-color: #1092c5;
+}
+/* View Button */
+.settingsaccounttabViewButton {
+  top: 105px;
+  left: 142px;
+  height: 28px;
+  width: 70px;
+  position: absolute;
+  overflow: visible;
+  border: 2px solid #142A30;
+  background-color: #286178;
+  font-family: Lucida Console;
+  font-size: 14px;
+  font-weight: 2px;
+  color: white;
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+.settingsaccounttabViewButton:hover {
+  cursor: pointer;
+  background-color: #1092c5;
+}
+/* Amount Text */
+.settingsaccounttabAmountText {
+  top: 112px;
+  left: 230px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 14px;
+  font-weight: 2px;
+  color: green;
+}
+/* Macro Tab Layout(settings) */
+.settingsmacrotab{
+  background-color: #142428;
+  position: absolute;
+  overflow: visible;
+  height: 220px;
+  width: 408px;
+  top: 260px;
+  left: 407px;
+  border: 1px solid #1A2E35;
+}
+.settingsmacrolabelbar {
+  background-color: #15282F;
+  position: absolute;
+  overflow: visible;
+  height: 30px;
+  width: 408px;
+  top: -2px;
+  left: -1px;
+  border: 1px solid #1A2E35;
+}
+.settingsmacrolabeltext {
+  top: 5px;
+  left: 36px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+.settingsmacrotabicon {
+  top: 2px;
+  left: 6px;
+  position: absolute;
+  overflow: visible;
+}
+/* Macro on off text */
+.settingsmacrotabMacroText {
+  top: 40px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 20px;
+  font-weight: 2px;
+  color: white;
+}
+/* Macro on button */
+.settingsmacrotabOnButton {
+  top: 35px;
+  left: 80px;
+  height: 28px;
+  width: 50px;
+  position: absolute;
+  overflow: visible;
+  border: 2px solid #142A30;
+  background-color: #286178;
+  font-family: Lucida Console;
+  font-size: 14px;
+  font-weight: 2px;
+  color: white;
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+.settingsmacrotabOnButton:hover {
+  cursor: pointer;
+  background-color: #1092c5;
+}
+/* Macro off button */
+.settingsmacrotabOffButton {
+  top: 35px;
+  left: 135px;
+  position: absolute;
+  overflow: visible;
+  height: 28px;
+  width: 50px;
+  border: 2px solid #142A30;
+  background-color: #286178;
+  font-family: Lucida Console;
+  font-size: 14px;
+  font-weight: 2px;
+  color: white;
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+.settingsmacrotabOffButton:hover {
+  cursor: pointer;
+  background-color: #1092c5;
+}
+/* Macro status */
+.settingsmacrotabStatusText {
+  top: 40px;
+  left: 260px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 20px;
+  font-weight: 2px;
+  color: white;
+}
+.settingsmacrotabStateText {
+  top: 40px;
+  left: 345px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 20px;
+  font-weight: 2px;
+  color: red;
+}
+/* Macro Delay */
+.settingsmacrotabDelayText {
+  top: 75px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 20px;
+  font-weight: 2px;
+  color: white;
+}
+.settingsmacrotabDelayBox {
+  top: 70px;
+  left: 183px;
+  height: 28px;
+  width: 50px;
+  position: absolute;
+  overflow: visible;
+  border: 2px solid #142A30;
+  background-color: #1B3742;
+  font-family: Lucida Console;
+  font-size: 14px;
+  font-weight: 2px;
+  color: white;
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+/* Macro command */
+.settingsmacrotabCommandText {
+  top: 110px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 20px;
+  font-weight: 2px;
+  color: white;
+}
+.settingsmacrotabCommandBox {
+  top: 105px;
+  left: 100px;
+  height: 28px;
+  width: 285px;
+  position: absolute;
+  overflow: visible;
+  border: 2px solid #142A30;
+  background-color: #1B3742;
+  font-family: Lucida Console;
+  font-size: 14px;
+  font-weight: 2px;
+  color: white;
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+/* Macro whitelist igns */
+.settingsmacrotabWhitelistText {
+  top: 150px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 20px;
+  font-weight: 2px;
+  color: white;
+}
+.settingsmacrotabWhitelistBox {
+  top: 145px;
+  left: 123px;
+  height: 28px;
+  width: 130px;
+  position: absolute;
+  overflow: visible;
+  border: 2px solid #142A30;
+  background-color: #1B3742;
+  font-family: Lucida Console;
+  font-size: 14px;
+  font-weight: 2px;
+  color: white;
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+/* Macro add button */
+.settingsmacrotabAddButton {
+  top: 145px;
+  left: 255px;
+  height: 28px;
+  width: 30px;
+  position: absolute;
+  overflow: visible;
+  border: 2px solid #142A30;
+  background-color: #286178;
+  font-family: Lucida Console;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+.settingsmacrotabAddButton:hover {
+  cursor: pointer;
+  background-color: #1092c5;
+}
+/* Macro Remove Button */
+.settingsmacrotabRemoveButton {
+  top: 145px;
+  left: 290px;
+  height: 28px;
+  width: 30px;
+  position: absolute;
+  overflow: visible;
+  border: 2px solid #142A30;
+  background-color: #286178;
+  font-family: Lucida Console;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+.settingsmacrotabRemoveButton:hover {
+  cursor: pointer;
+  background-color: #1092c5;
+}
+/* Macro Show button */
+.settingsmacrotabShowButton {
+  top: 145px;
+  left: 325px;
+  height: 28px;
+  width: 60px;
+  position: absolute;
+  overflow: visible;
+  border: 2px solid #142A30;
+  background-color: #286178;
+  font-family: Lucida Console;
+  font-size: 14px;
+  font-weight: 2px;
+  color: white;
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+.settingsmacrotabShowButton:hover {
+  cursor: pointer;
+  background-color: #1092c5;
+}
+/* Discord settings tab */
+.discordsettingstab{
+  background-color: #142428;
+  position: absolute;
+  overflow: visible;
+  height: 220px;
+  width: 815px;
+  top: 40px;
+  left: -1px;
+  border: 1px solid #1A2E35;
+}
+.discordsettingslabelbar {
+  background-color: #15282F;
+  position: absolute;
+  overflow: visible;
+  height: 30px;
+  width: 815px;
+  top: -2px;
+  left: -1px;
+  border: 1px solid #1A2E35;
+}
+.discordsettingslabeltext {
+  top: 5px;
+  left: 36px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+.discordsettingslabelicon {
+  top: 2px;
+  left: 7px;
+  position: absolute;
+  overflow: visible;
+}
+/* Discord Token */
+.discordsettingsTokenText {
+  top: 40px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 20px;
+  font-weight: 2px;
+  color: white;
+}
+.discordsettingsTokenBox {
+  top: 35px;
+  left: 135px;
+  height: 28px;
+  width: 630px;
+  position: absolute;
+  overflow: visible;
+  border: 2px solid #142A30;
+  background-color: #1B3742;
+  font-family: Lucida Console;
+  font-size: 14px;
+  font-weight: 2px;
+  color: white;
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+/* Discord Channel ID */
+.discordsettingsChannelText {
+  top: 75px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 20px;
+  font-weight: 2px;
+  color: white;
+}
+.discordsettingsChannelBox {
+  top: 70px;
+  left: 135px;
+  height: 28px;
+  width: 270px;
+  position: absolute;
+  overflow: visible;
+  border: 2px solid #142A30;
+  background-color: #1B3742;
+  font-family: Lucida Console;
+  font-size: 14px;
+  font-weight: 2px;
+  color: white;
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+/* Discord Prefix */
+.discordsettingsPrefixText {
+  top: 110px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 20px;
+  font-weight: 2px;
+  color: white;
+  white-space:pre;
+}
+.discordsettingsPrefixBox {
+  top: 105px;
+  left: 135px;
+  height: 28px;
+  width: 60px;
+  position: absolute;
+  overflow: visible;
+  border: 2px solid #142A30;
+  background-color: #1B3742;
+  font-family: Lucida Console;
+  font-size: 14px;
+  font-weight: 2px;
+  color: white;
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+/* Discord on button */
+.discordsettingsOnButton {
+  top: 140px;
+  left: 83px;
+  height: 28px;
+  width: 55px;
+  position: absolute;
+  overflow: visible;
+  border: 2px solid #142A30;
+  background-color: #286178;
+  font-family: Lucida Console;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+.discordsettingsOnButton:hover {
+  cursor: pointer;
+  background-color: #1092c5;
+}
+/* Discord Off button */
+.discordsettingsOffButton {
+  top: 140px;
+  left: 143px;
+  height: 28px;
+  width: 55px;
+  position: absolute;
+  overflow: visible;
+  border: 2px solid #142A30;
+  background-color: #286178;
+  font-family: Lucida Console;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+.discordsettingsOffButton:hover {
+  cursor: pointer;
+  background-color: #1092c5;
+}
+/* Discord Bot Status */
+.discordsettingsStatusText {
+  top: 180px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 20px;
+  font-weight: 2px;
+  color: white;
+}
+.discordsettingsStateText {
+  top: 180px;
+  left: 160px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 20px;
+  font-weight: 2px;
+  color: red;
+}
+/* Bots bots-control tab */
+.botssettingstab{
+  background-color: #142428;
+  position: absolute;
+  overflow: visible;
+  height: 220px;
+  width: 815px;
+  top: 40px;
+  left: -1px;
+  border: 1px solid #1A2E35;
+}
+.botssettingslabelbar {
+  background-color: #15282F;
+  position: absolute;
+  overflow: visible;
+  height: 30px;
+  width: 815px;
+  top: -2px;
+  left: -1px;
+  border: 1px solid #1A2E35;
+}
+.botssettingslabeltext {
+  top: 5px;
+  left: 36px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+.botssettingslabelicon {
+  top: 2px;
+  left: 7px;
+  position: absolute;
+  overflow: visible;
+}
+/* Sudo */
+.botssettingsSudoText {
+  top: 40px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 20px;
+  font-weight: 2px;
+  color: white;
+}
+.botssettingsSudoIgnBox {
+  top: 35px;
+  left: 115px;
+  height: 28px;
+  width: 155px;
+  position: absolute;
+  overflow: visible;
+  border: 2px solid #142A30;
+  background-color: #1B3742;
+  font-family: Lucida Console;
+  font-size: 14px;
+  font-weight: 2px;
+  color: white;
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+.botssettingsSudoMessageBox {
+  top: 35px;
+  left: 275px;
+  height: 28px;
+  width: 440px;
+  position: absolute;
+  overflow: visible;
+  border: 2px solid #142A30;
+  background-color: #1B3742;
+  font-family: Lucida Console;
+  font-size: 14px;
+  font-weight: 2px;
+  color: white;
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+.botssettingsSudoButton {
+  top: 35px;
+  left: 720px;
+  height: 28px;
+  width: 55px;
+  position: absolute;
+  overflow: visible;
+  border: 2px solid #142A30;
+  background-color: #286178;
+  font-family: Lucida Console;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+.botssettingsSudoButton:hover {
+  cursor: pointer;
+  background-color: #1092c5;
+}
+/* Sudo all */
+.botssettingsSudoAllText {
+  top: 75px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 20px;
+  font-weight: 2px;
+  color: white;
+}
+.botssettingsSudoAllBox {
+  top: 70px;
+  left: 115px;
+  height: 28px;
+  width: 600px;
+  position: absolute;
+  overflow: visible;
+  border: 2px solid #142A30;
+  background-color: #1B3742;
+  font-family: Lucida Console;
+  font-size: 14px;
+  font-weight: 2px;
+  color: white;
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+.botssettingsSudoAllButton {
+  top: 70px;
+  left: 720px;
+  height: 28px;
+  width: 55px;
+  position: absolute;
+  overflow: visible;
+  border: 2px solid #142A30;
+  background-color: #286178;
+  font-family: Lucida Console;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+.botssettingsSudoAllButton:hover {
+  cursor: pointer;
+  background-color: #1092c5;
+}
+/* changelog-tab */
+.changelogtab{
+  background-color: #142428;
+  position: absolute;
+  overflow: visible;
+  height: 440px;
+  width: 407px;
+  top: 39px;
+  left: -1px;
+  border: 1px solid #1A2E35;
+}
+.changeloglabelbar {
+  background-color: #15282F;
+  position: absolute;
+  overflow: visible;
+  height: 30px;
+  width: 407px;
+  top: -2px;
+  left: -1px;
+  border: 1px solid #1A2E35;
+}
+.changeloglabeltext {
+  top: 5px;
+  left: 36px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+.changeloglabelicon {
+  top: 2px;
+  left: 7px;
+  position: absolute;
+  overflow: visible;
+}
+/* System-info tab */ 
+.systeminfotab{
+  background-color: #142428;
+  position: absolute;
+  overflow: visible;
+  height: 440px;
+  width: 408px;
+  top: 39px;
+  left: 406px;
+  border: 1px solid #1A2E35;
+}
+.systeminfolabelbar {
+  background-color: #15282F;
+  position: absolute;
+  overflow: visible;
+  height: 30px;
+  width: 408px;
+  top: -2px;
+  left: -1px;
+  border: 1px solid #1A2E35;
+}
+.systeminfolabeltext {
+  top: 5px;
+  left: 36px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+.systeminfolabelicon {
+  top: 2px;
+  left: 7px;
+  position: absolute;
+  overflow: visible;
+}
+/* Specs */
+.generalsysteminfotitle {
+  top: 40px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 20px;
+  font-weight: 2px;
+  color: white;
+}
+.generalsysteminfoPlatform {
+  top: 65px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 15px;
+  font-weight: 2px;
+  color: cyan;
+}
+.generalsysteminfoCPUMan {
+  top: 85px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 15px;
+  font-weight: 2px;
+  color: cyan;
+}
+.generalsysteminfoCPUName {
+  top: 105px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 15px;
+  font-weight: 2px;
+  color: cyan;
+}
+.generalsysteminfoCPUThreads {
+  top: 125px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 15px;
+  font-weight: 2px;
+  color: cyan;
+}
+.generalsysteminfoCPUCores {
+  top: 145px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 15px;
+  font-weight: 2px;
+  color: cyan;
+}
+.generalsysteminfoCPUSpeed {
+  top: 165px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 15px;
+  font-weight: 2px;
+  color: cyan;
+}
+.generalsysteminfoRAM {
+  top: 185px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 15px;
+  font-weight: 2px;
+  color: cyan;
+}
+/* ChangeLog */
+.generaltitle {
+  top: 40px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 20px;
+  font-weight: 2px;
+  color: white;
+}
+.generalchangelog1 {
+  top: 75px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 20px;
+  font-weight: 2px;
+  color: white;
+}
+.generalchangelog2 {
+  top: 100px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 20px;
+  font-weight: 2px;
+  color: white;
+}
+.generalchangelog3 {
+  top: 125px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 20px;
+  font-weight: 2px;
+  color: white;
+}
+.generalchangelog4 {
+  top: 150px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 20px;
+  font-weight: 2px;
+  color: white;
+}
+.generalchangelog5 {
+  top: 175px;
+  left: 5px;
+  position: absolute;
+  overflow: visible;
+  font-family: Lucida Console;
+  font-size: 20px;
+  font-weight: 2px;
+  color: white;
+}

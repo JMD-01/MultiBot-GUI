@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MultiBot</title>
+  <!--import css-->
+  <link rel="stylesheet" href="GUI.css">
+</head>
+
+<body>
+  <!--titlebar-->
+  <div class="titlebar">
+    <div class="multibot-titlebar">MULTIBOT 1.3</div>
+    <img src="../img/logo.png" class="multibot-logo" alt="logo">
+  </div>
+  <!-- minimize button -->
+  <div class="minimize" onclick="MinApp()">
+    <img src="../img/minimize.png" class="minimize-logo" alt="minimizelogo">
+  </div>
+  <!-- exit button -->
+  <div class="exit" onclick="ExitApp()">
+    <img src="../img/exit.png" class="exit-logo" alt="exitlogo">
+  </div>
+  <!-- general-bar -->
+  <div class="general-bar">
+    <img src="../img/generalbar.png" class="general-bar-logo" alt="generalbarlogo">
+    <div class="generalbotstatustext" id="generalbotstatustext">BOT STATUS : OFFLINE</div>
+    <div class="generaldiscordbotstatus">DISCORD BOT: OFFLINE</div>
+    <div class="generalserverip">SERVER : </div>
+    <div class="generalonline">ONLINE : 0/0</div>
+
+    <div class="generalstartbutton" id="generalstartbutton" onclick="startbutton()">START</div>
+    <div class="generalstopbutton" id="generalstopbutton" onclick="stopbutton()">STOP</div>
+  </div>
+  <!-- side-bar-tabs-->
+  <div class="side-bar">
+    <!-- homebutton -->
+    <div class="homebutton" id="homebutton" onclick="openHome()">
+      <img src="../img/homebutton.png" class="homebuttonlogo" alt="homebuttonlogo">
+    </div>
+    <!-- settingsbutton -->
+    <div class="settingsbutton" id="settingsbutton" onclick="openSettings()">SETTINGS
+      <img src="../img/settingsbutton.png" class="settingsbuttonlogo" alt="settingsbuttonlogo">
+    </div>
+    <!-- discordbutton -->
+    <div class="discordbutton" id="discordbutton" onclick="openDiscord()">DISCORD
+      <img src="../img/discordbutton.png" class="discordbuttonlogo" alt="discordbuttonlogo">
+    </div>
+    <!-- botstab -->
+    <div class="botsbutton" id="botsbutton" onclick="openBots()">BOTS
+      <img src="../img/botsbutton.png" class="botsbuttonlogo" alt="botsbuttonlogo">
+    </div>
+  </div>
+
+  <!--hometab-->
+  <div id="HOME" class="hometab">
+    <!-- labelbar -->
+    <div class="homelabelbar">
+      <div class="homelabeltext">GENERAL</div>
+      <img src="../img/homebutton.png" class="homelabelicon" alt="homelabelicon">
+      <!-- changelog tab -->
+      <div class="changelogtab">
+        <div class="changeloglabelbar">
+          <div class="changeloglabeltext">CHANGELOG</div>
+          <img src="../img/log.png" class="changeloglabelicon" alt="changeloglabelicon">
+        </div>
+        <!-- TAB-CONTENT-START -->
+        <div class="generaltitle">BETA 1.3:</div>
+        <div class="generalchangelog1">+ New Improved GUI</div>
+        <div class="generalchangelog2">+ Lots of small optimizations</div>
+        <div class="generalchangelog3">+ New console</div>
+        <div class="generalchangelog4">+ System information shown</div>
+        <div class="generalchangelog5">+ Mac and linux compatible***</div>
+
+
+
+
+        <!-- TAB-CONTENT-END-->
+      </div>
+      <!-- systeminfo tab -->
+      <div class="systeminfotab">
+        <div class="systeminfolabelbar">
+          <div class="systeminfolabeltext">SYSTEM-INFO</div>
+          <img src="../img/log.png" class="systeminfolabelicon" alt="systeminfolabelicon">
+        </div>
+        <!-- TAB-CONTENT-START -->
+        <div class="generalsysteminfotitle">SPECS:</div>  
+        <div class="generalsysteminfoPlatform">OS-Platform:</div>
+        <div class="generalsysteminfoCPUMan">CPU-Manufacturer:</div>
+        <div class="generalsysteminfoCPUName">CPU-Name:</div>
+        <div class="generalsysteminfoCPUThreads">CPU-Threads:</div>
+        <div class="generalsysteminfoCPUCores">CPU-Cores:</div>
+        <div class="generalsysteminfoCPUSpeed">CPU-Speed:</div>
+        <div class="generalsysteminfoRAM">RAM:</div>
+
+
+        <!-- TAB-CONTENT-END-->
+      </div>
+
+    </div>
+  </div>
+
+  <!--settingstab-->
+  <div id="SETTINGS" class="settingstab">
+    <!-- labelbar -->
+    <div class="settingslabelbar">
+      <div class="settingslabeltext">SETTINGS</div>
+      <img src="../img/settingsbutton.png" class="settingslabelicon" alt="settingslabelicon">
+    </div>
+    <!-- servertab -->
+    <div class="settingsservertab">
+      <div class="settingsserverlabelbar">
+        <div class="settingsserverlabeltext">SERVER</div>
+        <img src="../img/server.png" class="settingsserverlabelicon" alt="settingsserverlabelicon">
+      </div>
+      <!-- TAB-CONTENT-START -->
+      <!-- ServerIP -->
+      <div class="settingsservertabIPtext">Server-IP:</div>
+      <input type="text" spellcheck="false" class="settingsservertabIPbox">
+      <!-- Port -->
+      <div class="settingsservertabPorttext">Port     :</div>
+      <input type="number" spellcheck="false" class="settingsservertabPortbox">
+      <!-- Version -->
+      <div class="settingsservertabVersiontext">Version  :</div>
+      <select class="settingsservertabVersionbox">
+        <option class="option1" value="1.8">1.8</option>
+      </select>
+
+
+
+      <!-- TAB-CONTENT-END-->
+    </div>
+    <!-- botstab -->
+    <div class="settingsbotstab">
+      <div class="settingsbotslabelbar">
+        <div class="settingsbotslabeltext">BOTS</div>
+        <img src="../img/botstab.png" class="settingsbotslabelicon" alt="settingslabeltabicon">
+      </div>
+      <!-- TAB-CONTENT-START -->
+      <!-- Max bots -->
+      <div class="settingsbotstabMaxBotsText">Max Bots     :</div>
+      <input type="number" min="0" spellcheck="false" class="settingsbotstabMaxBotsBox">
+      <!-- Join Speed --> 
+      <div class="settingsbotstabJoinSpeedText">Join Speed(s):</div>
+      <input type="number" min="0"  spellcheck="false" class="settingsbotstabJoinSpeedBox">
+      <!-- Join Command -->
+      <div class="settingsbotstabJoinCommandText">Join Command :</div>
+      <input type="text" spellcheck="false" class="settingsbotstabJoinCommandBox">
+
+
+
+      <!-- TAB-CONTENT-END-->
+    </div>
+    <!-- accountstab -->
+    <div class="settingsaccounttab">
+      <div class="settingsaccountlabelbar">
+        <div class="settingsaccountlabeltext">ACCOUNTS</div>
+        <img src="../img/accounts.png" class="settingsaccountlabelicon" alt="settingsaccountlabelicon">
+      </div>
+      <!-- TAB-CONTENT-START -->
+      <div class="settingsaccounttabPathText">Path:</div>
+      <input type="text" spellcheck="false" class="settingsaccounttabPathBox">
+      <button class="settingsaccounttabPathButton" onclick="setFilePath()">SET</button>
+      <div class="settingsaccounttabFileText">File:</div>
+      <div class="settingsaccounttabFileName"></div>
+      <button class="settingsaccounttabCheckButton" onclick="checkList()">CHECK</button>
+      <button class="settingsaccounttabViewButton" onclick="viewList()">VIEW</button>
+      <div class="settingsaccounttabAmountText"></div>
+
+
+
+
+      <!-- TAB-CONTENT-END-->
+    </div>
+    <!-- macrotab -->
+    <div class="settingsmacrotab">
+      <div class="settingsmacrolabelbar">
+        <div class="settingsmacrolabeltext">MACRO</div>
+        <img src="../img/macro.png" class="settingsmacrotabicon" alt="settingsmacrotabicon">
+      </div>
+      <!-- TAB-CONTENT-START -->
+      <div class="settingsmacrotabMacroText">Macro:</div>
+      <button class="settingsmacrotabOnButton" onclick="macroOnToggle()">ON</button>
+      <button class="settingsmacrotabOffButton" onclick="macroOffToggle()">OFF</button>
+      <div class="settingsmacrotabStatusText">Status:</div>
+      <div class="settingsmacrotabStateText">OFF</div>
+      <div class="settingsmacrotabDelayText">Macro Delay(s):</div> 
+      <input type="number" min="0"  spellcheck="false" class="settingsmacrotabDelayBox">   
+      <div class="settingsmacrotabCommandText">Command:</div>
+      <input type="text"  spellcheck="false"  class="settingsmacrotabCommandBox">
+      <div class="settingsmacrotabWhitelistText">Whitelist:</div>
+      <input list="igns" name="ign-choice" spellcheck="false" class="settingsmacrotabWhitelistBox"/>
+      <datalist id="igns" class="settingsmacrotabWhitelistIGNS">
+      </datalist>
+      <button class="settingsmacrotabAddButton" onclick="macroAdd()">+</button>
+      <button class="settingsmacrotabRemoveButton" onclick="macroRemove()">-</button>
+      <button class="settingsmacrotabShowButton" onclick="macroShow()">SHOW</button>
+
+
+
+      <!-- TAB-CONTENT-END-->
+    </div>
+  </div>
+
+  <!--discordtab-->
+  <div id="DISCORD" class="discordtab">
+    <!-- labelbar -->
+    <div class="discordlabelbar">
+      <div class="discordlabeltext">DISCORD</div>
+      <img src="../img/discordbutton.png" class="discordlabelicon" alt="discordlabelicon">
+      <!-- discordsettingstab -->
+      <div class="discordsettingstab">
+        <div class="discordsettingslabelbar">
+          <div class="discordsettingslabeltext">DISCORD-SETTINGS</div>
+          <img src="../img/settingsgear.png" class="discordsettingslabelicon" alt="discordsettingslabelicon">
+        </div>
+        <!-- TAB-CONTENT-START -->
+        <div class="discordsettingsTokenText">Bot Token :</div>
+        <input type="text"  spellcheck="false"  class="discordsettingsTokenBox">
+        <div class="discordsettingsChannelText">Channel ID:</div>
+        <input type="text" spellcheck="false"   class="discordsettingsChannelBox">
+        <div class="discordsettingsPrefixText">Prefix    :</div>
+        <input type="text"  spellcheck="false"  class="discordsettingsPrefixBox">
+        <button class="discordsettingsOnButton" onclick="discordOnToggle()">ON</button>
+        <button class="discordsettingsOffButton" onclick="discordOffToggle()">OFF</button>
+        <div class="discordsettingsStatusText">Discord Bot:</div>
+        <div class="discordsettingsStateText">OFF</div>
+
+
+
+
+
+        <!-- TAB-CONTENT-END-->
+      </div>
+    </div>
+  </div>
+
+  <!--botstab-->
+  <div id="BOTS" class="botstab">
+    <!-- labelbar -->
+    <div class="botslabelbar">
+      <div class="botslabeltext">BOTS</div>
+      <img src="../img/botsbutton.png" class="botslabelicon" alt="botslabelicon">
+      <!-- botssettingstab -->
+      <div class="botssettingstab">
+        <div class="botssettingslabelbar">
+          <div class="botssettingslabeltext">BOTS-CONTROL</div>
+          <img src="../img/bots.png" class="botssettingslabelicon" alt="botssettingslabelicon">
+        </div>
+        <!-- TAB-CONTENT-START -->
+        <div class="botssettingsSudoText">SUDO  :</div>
+        <input type="text" spellcheck="false" placeholder="IGN" class="botssettingsSudoIgnBox">
+        <input type="text" spellcheck="false" placeholder="Message"  class="botssettingsSudoMessageBox">
+        <button class="botssettingsSudoButton" onclick="SudoSend()">SEND</button>
+
+        <div class="botssettingsSudoAllText">SUDO-ALL:</div>
+        <input type="text"  spellcheck="false"  placeholder="Message" class="botssettingsSudoAllBox">
+        <button class="botssettingsSudoAllButton" onclick="SudoSendAll()">SEND</button>
+
+
+        <!-- TAB-CONTENT-END-->
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!--import js-->
+  <script src="GUI.js"></script>
+
+</body>
+
+</html>

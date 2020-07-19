@@ -599,19 +599,19 @@ ipc.connectTo('main-process', () => {
   //Send Data from gui to mainbot on detected change
   SendToIPC.on('update', () => {
     let datasend = {
-      ServerIP: serverip,
-      Port: port,
-      version: version,
-      botCount: maxbots,
-      joinSpeed: joinspeed,
-      hubCommand: loginmessage,
-      accountpath: accountpath,
-      macro: macrostatus,
-      macrodelay: macrodelay,
-      macrocommand: macromessage,
-      token: discordtoken,
-      channelID: discordchannel,
-      prefix: discordprefix,
+      ServerIP: document.getElementsByClassName('settingsservertabIPbox')[0].value,
+      Port: document.getElementsByClassName('settingsservertabPortbox')[0].value,
+      version: document.getElementsByClassName('settingsservertabVersionbox')[0].value,
+      botCount: document.getElementsByClassName('settingsbotstabMaxBotsBox')[0].value.toString(),
+      joinSpeed: document.getElementsByClassName('settingsbotstabJoinSpeedBox')[0].value.toString(),
+      hubCommand: document.getElementsByClassName('settingsbotstabJoinCommandBox')[0].value,
+      accountpath: document.getElementsByClassName('settingsaccounttabPathBox')[0].value,
+      macro: document.getElementsByClassName('settingsmacrotabStateText')[0].innerHTML,
+      macrodelay: document.getElementsByClassName('settingsmacrotabDelayBox')[0].value,
+      macrocommand: document.getElementsByClassName('settingsmacrotabCommandBox')[0].value,
+      token: document.getElementsByClassName('discordsettingsTokenBox')[0].value,
+      channelID: document.getElementsByClassName('discordsettingsChannelBox')[0].value,
+      prefix: document.getElementsByClassName('discordsettingsPrefixBox')[0].value,
       whitelist: whitelist
     }
     ipc.of['main-process'].emit('update-data', datasend);

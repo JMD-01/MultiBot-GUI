@@ -14,7 +14,7 @@ let options = {
     'dir': '.',
     'app-copyright': 'ProZed',
     'app-version': '1.4.0',
-    'asar': true,
+    'asar': false,
     'icon': `./img/MultiBot_Logo.ico`,
     'name': 'MultiBot 1.4',
     'ignore': ['./releases', './.git','./packager.js','./.vscode'],

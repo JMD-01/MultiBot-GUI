@@ -198,7 +198,7 @@ SendToIPC.on('started',()=>{
 })
 //Stop Bots
 function stopbutton(){
-  SendToIPC.emit('start-button');
+  SendToIPC.emit('stop-button');
   keyreceived();
 }
 //Stop Bots Reply

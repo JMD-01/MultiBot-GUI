@@ -13,21 +13,21 @@ let options = {
     'platform': 'win32',
     'dir': '.',
     'app-copyright': 'ProZed',
-    'app-version': '1.4.0',
+    'app-version': '1.5.0',
     'asar': false,
     'icon': `./img/MultiBot_Logo.ico`,
-    'name': 'MultiBot 1.4',
+    'name': 'MultiBot 1.5 Lite',
     'ignore': ['./releases', './.git','./packager.js','./.vscode'],
     'out': './releases',
     'overwrite': true,
     'prune': true,
-    'version': '1.4.0',
+    'version': '1.5.0',
     'version-string':{
       'CompanyName': 'Charged Development',
-      'FileDescription': 'MultiBot 1.4', 
-      'OriginalFilename': 'MultiBot 1.4',
-      'ProductName': 'MultiBot 1.4',
-      'InternalName': 'MultiBot 1.4'
+      'FileDescription': 'MultiBot 1.4 Lite', 
+      'OriginalFilename': 'MultiBot 1.4 Lite',
+      'ProductName': 'MultiBot 1.4 Lite',
+      'InternalName': 'MultiBot 1.4 Lite'
     }
 };
 packager(options, function done_callback(err, appPaths) {

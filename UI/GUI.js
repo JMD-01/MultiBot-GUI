@@ -444,6 +444,11 @@ function discordOnToggle(){
   SendToIPC.emit('start-discord-button');
   keyreceived();
 }
+//Respawn Bots
+function BotsRespawn(){
+  SendToIPC.emit('respawn-bots');
+  keyreceived();
+}
 //Discord On Toggle Reply
 let discordbotstatetext = document.getElementsByClassName('discordsettingsStateText')[0];
 let discordbotstatus = document.getElementsByClassName('generaldiscordbotstatus')[0];
@@ -644,6 +649,10 @@ ipc.connectTo('main-process', () => {
   //sudo send all
   SendToIPC.on('sudo-all-send', (message) => {
     ipc.of['main-process'].emit('sudo-send-all', message);
+  })
+  //Respawn bots
+  SendToIPC.on('respawn-bots',()=>{
+    ipc.of['main-process'].emit('respawn-bots');
   })
   //discord start button
   SendToIPC.on('start-discord-button', () => {
@@ -861,6 +870,7 @@ document.getElementsByClassName('discordsettingsPrefixBox')[0].addEventListener(
 })
 //Eventhandler to update settings from gui to main process db
 function keyreceived() {
+  setTimeout(() => {
   serverip = document.getElementsByClassName('settingsservertabIPbox')[0].value;
   port = document.getElementsByClassName('settingsservertabPortbox')[0].value;
   version = document.getElementsByClassName('settingsservertabVersionbox')[0].value;
@@ -874,5 +884,8 @@ function keyreceived() {
   discordtoken = document.getElementsByClassName('discordsettingsTokenBox')[0].value;
   discordchannel = document.getElementsByClassName('discordsettingsChannelBox')[0].value;
   discordprefix = document.getElementsByClassName('discordsettingsPrefixBox')[0].value;
+  }, 200);
+  setTimeout(() => {
   SendToIPC.emit('update');
+  }, 50);
 }

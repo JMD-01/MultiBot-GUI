@@ -1739,6 +1739,27 @@ body {
   cursor: pointer;
   background-color: #1092c5;
 }
+.botsrespawnbutton {
+  top: 105px;
+  left: 10px;
+  height: 28px;
+  width: 150px;
+  position: absolute;
+  overflow: visible;
+  border: 2px solid #142A30;
+  background-color: #286178;
+  font-family: Lucida Console;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+.botsrespawnbutton:hover {
+  cursor: pointer;
+  background-color: #1092c5;
+}
 /* changelog-tab */
 .changelogtab{
   background-color: #142428;

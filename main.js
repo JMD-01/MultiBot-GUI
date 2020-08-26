@@ -38,19 +38,6 @@ app.once('ready', () => {
   ipcMain.on('minimize', (event, arg) => {
     window.minimize();
   })
-  //Disable refresh and other shortcuts
-    globalShortcut.register('CommandOrControl+R', () => {
-      return;
-    })
-  //Disable closing
-    globalShortcut.register('CommandOrControl+W', () => {
-      return;
-    })
-  //Disable minimize
-    globalShortcut.register('CommandOrControl+M', () => {
-      return;
-    })
-
 });
 //EXIT APP
 ipcMain.on('exit', (event, arg) => {

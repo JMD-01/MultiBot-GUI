@@ -9,7 +9,7 @@
   "author": "ProZed",
   "license": "ISC",
   "dependencies": {
-    "electron": "^9.2.1",
+    "electron": "^11.5.0",
     "node-ipc": "^9.1.1"
   },
   "devDependencies": {
